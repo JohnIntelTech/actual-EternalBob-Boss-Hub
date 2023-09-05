@@ -116,7 +116,7 @@ ImageLabel.Image = "http://www.roblox.com/asset/?id=13769220309"
 
 -- Scripts:
 
-local function JNRXOF_fake_script() -- Eternal_Bob_Hitter.Script 
+local function JGJYZTJ_fake_script() -- Eternal_Bob_Hitter.Script 
 	local script = Instance.new('Script', Eternal_Bob_Hitter)
 
 	Eternal_Bob_Hitter.MouseButton1Down:connect(function()
@@ -125,33 +125,31 @@ local function JNRXOF_fake_script() -- Eternal_Bob_Hitter.Script
 		end
 	end)
 end
-coroutine.wrap(JNRXOF_fake_script)()
-local function QDGD_fake_script() -- Auto_Tycoon.Script 
+coroutine.wrap(JGJYZTJ_fake_script)()
+local function OEJPPIE_fake_script() -- Auto_Tycoon.Script 
 	local script = Instance.new('Script', Auto_Tycoon)
 
-	Auto_Tycoon.MouseButton1Click:Connect(function()
-		local function onClick()
-			for _, v in pairs(workspace:GetDescendants()) do
+	Auto_Tycoon.MouseButton1Down:connect(function()
+		while task.wait() do
+			for i,v in pairs(workspace:GetDescendants()) do
 				if v.Name == "Click" and v:FindFirstChild("ClickDetector") then
-					fireclickdetector(v:FindFirstChild("ClickDetector"))
+					fireclickdetector(v.ClickDetector)
 				end
 			end
 		end
 	end)
-	
-	
 end
-coroutine.wrap(QDGD_fake_script)()
-local function ZSRKIM_fake_script() -- TextButton3.Script 
+coroutine.wrap(OEJPPIE_fake_script)()
+local function UZURXP_fake_script() -- TextButton3.Script 
 	local script = Instance.new('Script', TextButton3)
 
-	TextButton3.MouseButton1Down:connect(function()
+	TextButton3.MouseButton1Down:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Slap%20Battles"))()
 	end)
 	
 end
-coroutine.wrap(ZSRKIM_fake_script)()
-local function YRYJQEU_fake_script() -- Frame.DragScript 
+coroutine.wrap(UZURXP_fake_script)()
+local function XGBIZSZ_fake_script() -- Frame.DragScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
@@ -194,4 +192,4 @@ local function YRYJQEU_fake_script() -- Frame.DragScript
 	end)
 	
 end
-coroutine.wrap(YRYJQEU_fake_script)()
+coroutine.wrap(XGBIZSZ_fake_script)()
